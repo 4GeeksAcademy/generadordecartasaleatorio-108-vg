@@ -1,35 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+<head>
+    <title>Random Card Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body class="bg.success">
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+     <h1 class="text-light text-center my-5">Random Card Generator</h1>
+
+     <div class="container d-flex justify-content-center">
+       <div class="bg-light col-2 card">
+          <div id="top-suit">♠</div>
+          <div id="card-number" class="display-1">7</div>
+          <div id="bottom-suit" style="transform: rotate(180deg);">♠</div>
+       </div>
+     </div> 
+    <div class="d-flex justify-content-center mt-5">
+          <button onclick="newCard()" class="btn btn-warning">New Card</button>
     </div>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
+    <script src="./index.js"></script>
+
+</body>
 </html>
